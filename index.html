@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfólio pessoal de Jennifer Oliveira do Nascimento, estudante de tecnologia em Natal, RN. Conheça minhas habilidades, projetos e objetivos."
+    >
+
+    <meta name="theme-color" content="#f7f3ed">
+
+    <title>Jennifer Oliveira | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Link para pular diretamente ao conteúdo principal -->
+    <a class="skip-link" href="#conteudo">
+        Pular para o conteúdo
+    </a>
+
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header" id="topo">
+
+        <div class="container header-container">
+
+            <a
+                class="logo"
+                href="#inicio"
+                aria-label="Jennifer Oliveira, página inicial"
+            >
+                <span class="logo-mark" aria-hidden="true">J.</span>
+                <span class="logo-name">jennifer<span>.</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="menuPrincipal"
+            >
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav
+                class="main-nav"
+                id="menuPrincipal"
+                aria-label="Navegação principal"
+            >
+                <ul class="nav-list">
+
+                    <li>
+                        <a class="nav-link active" href="#inicio">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#sobre">
+                            Sobre mim
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#habilidades">
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#projetos">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link nav-contact" href="#contato">
+                            Vamos conversar?
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Ativar tema escuro"
+                aria-pressed="false"
+            >
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Modo escuro</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Conteúdo principal do portfólio -->
+    <main id="conteudo">
+
+        <!-- Seção inicial -->
+        <section class="hero section" id="inicio" aria-labelledby="heroTitle">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-greeting">
+                        <span class="greeting-sparkle" aria-hidden="true">✳</span>
+                        <span id="saudacao">Oi, que bom ter você aqui!</span>
+                    </p>
+
+                    <p class="hero-eyebrow">
+                        ESTUDANTE DE TECNOLOGIA
+                    </p>
+
+                    <h1 id="heroTitle">
+                        Oi, eu sou a
+                        <span class="highlight-name">
+                            Jennifer Oliveira.
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Estudando e aplicando fundamentos de HTML, CSS e JavaScript no desenvolvimento de páginas web modernas. Gosto de criar, testar coisas novas e descobrir
+                        quais são meus limites.
+                    </p>
+
+                    <div class="hero-tags" aria-label="Meus interesses">
+                        <span class="interest-tag">💻 Desenvolvimento web</span>
+                        <span class="interest-tag">🎨 Criatividade</span>
+                        <span class="interest-tag">🌱 Aprendizado</span>
+                    </div>
+
+                    <div class="hero-actions">
+
+                        <a class="button button-primary" href="#projetos">
+                            Conheça meus projetos
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a class="button button-secondary" href="#sobre">
+                            Um pouco sobre mim
+                        </a>
+
+                    </div>
+
+                    <p class="hero-location">
+                        <span aria-hidden="true">📍</span>
+                        Natal, Rio Grande do Norte, Brasil
+                    </p>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="hero-decoration decoration-top" aria-hidden="true">
+                        ✳
+                    </div>
+
+                    <div class="avatar-frame">
+
+                        <img
+                            class="hero-avatar"
+                            src="assets/avatar-jennifer.jpg"
+                            alt="Foto de Jennifer Oliveira do Nascimento"
+                            width="420"
+                            height="500"
+                            fetchpriority="high"
+                        >
+
+                        <div class="avatar-caption">
+                            <span class="caption-dot" aria-hidden="true"></span>
+                            <span>Construindo meu caminho ✨</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-note note-one" aria-hidden="true">
+                        <span class="note-icon">✿</span>
+                        <span>Feito com criatividade</span>
+                    </div>
+
+                    <div class="floating-note note-two" aria-hidden="true">
+                        <span class="note-icon">{"</>"}</span>
+                        <span>Um passo de cada vez</span>
+                    </div>
+
+                    <div class="hero-decoration decoration-bottom" aria-hidden="true">
+                        +
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom-note" aria-hidden="true">
+                <span class="hero-bottom-line"></span>
+                UM POUCO DE MIM, UM POUCO DO QUE EU SOU CAPAZ DE FAZER.
+                <span class="hero-bottom-line"></span>
+            </div>
+
+        </section>
+
+
+        <!-- Seção sobre mim -->
+        <section
+            class="about section"
+            id="sobre"
+            aria-labelledby="aboutTitle"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-kicker">
+                        PRAZER, SOU EU!
+                    </p>
+
+                    <h2 id="aboutTitle">
+                        Códigos,
+                        <span class="highlight-text">ideias e descobertas.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Cada projeto é uma oportunidade de aprender alguma coisa
+                        nova e dar mais um passo na direção dos meus objetivos.
+                    </p>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-card about-card-main">
+
+                        <span class="card-number" aria-hidden="true">01</span>
+
+                        <h3>Como tudo começou</h3>
+
+                        <p>
+                            Meu nome é Jennifer Oliveira do Nascimento e sou
+                            estudante do ensino médio do SENAC, em Natal, no Rio Grande
+                            do Norte. Estou começando minha trajetória na área
+                            de tecnologia e descobrindo, na prática, como
+                            transformar ideias em páginas e experiências
+                            digitais. O desenvolvimento web me permite ter ideias que sempre quis colocar em prática.
+                            Juntando minha visão criativa com a lógica de programação.
+                        </p>
+
+                    </div>
+
+                    <div class="about-card about-card-secondary">
+
+                        <span class="card-number" aria-hidden="true">02</span>
+
+                        <h3>Onde quero chegar</h3>
+
+                        <p>
+                            Quero desenvolver minhas habilidades em HTML, CSS
+                            e JavaScript, conhecer novas ferramentas e aprender
+                            com projetos reais. Meu objetivo é construir páginas webs cada vez melhores, 
+                            conquistar uma oportunidade de estágio quando estiver preparada e crescer
+                            profissionalmente sem deixar de lado meus princípios
+                            e minha personalidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="about-highlight">
+
+                    <span class="highlight-symbol" aria-hidden="true">✦</span>
+
+                    <p>
+                        Não preciso saber tudo agora.
+                        <strong>Apenas continuar me esforçando.</strong>
+                    </p>
+
+                    <span class="highlight-symbol" aria-hidden="true">✦</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Seção de habilidades -->
+        <section
+            class="skills section"
+            id="habilidades"
+            aria-labelledby="skillsTitle"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-kicker">
+                        MEU SITES
+                    </p>
+
+                    <h2 id="skillsTitle">
+                        O que estou aprendendo
+                        <span class="highlight-text">por aqui.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Estas são algumas das tecnologias que fazem parte do
+                        meu aprendizado. Estou construindo uma base aos poucos,
+                        praticando e melhorando a cada dia.
+                    </p>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card skill-html">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon" aria-hidden="true">
+                                <span>5</span>
+                            </div>
+
+                            <span class="skill-category">01 / ESTRUTURA</span>
+
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            A base das páginas web: organização de conteúdo,
+                            estrutura semântica e acessibilidade.
+                        </p>
+
+                        <div class="skill-level">
+                            <span class="level-label">Meu nível</span>
+                            <span class="level-badge level-beginner">
+                                Iniciante
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card skill-css">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon" aria-hidden="true">
+                                <span>3</span>
+                            </div>
+
+                            <span class="skill-category">02 / ESTILO</span>
+
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Cores, tipografia, layouts responsivos e os detalhes
+                            visuais que dão personalidade a um site.
+                        </p>
+
+                        <div class="skill-level">
+                            <span class="level-label">Meu nível</span>
+                            <span class="level-badge level-practicing">
+                                Praticando
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card skill-js">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon" aria-hidden="true">
+                                <span>JS</span>
+                            </div>
+
+                            <span class="skill-category">03 / INTERAÇÃO</span>
+
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Lógica de programação, eventos e funcionalidades
+                            que deixam as páginas mais dinâmicas.
+                        </p>
+
+                        <div class="skill-level">
+                            <span class="level-label">Meu nível</span>
+                            <span class="level-badge level-beginner">
+                                Iniciante
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card skill-git">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon" aria-hidden="true">
+                                <span>⌘</span>
+                            </div>
+
+                            <span class="skill-category">04 / VERSIONAMENTO</span>
+
+                        </div>
+
+                        <h3>Git</h3>
+
+                        <p>
+                            Organização de versões, acompanhamento de mudanças
+                            e primeiros passos no trabalho com repositórios.
+                        </p>
+
+                        <div class="skill-level">
+                            <span class="level-label">Meu nível</span>
+                            <span class="level-badge level-beginner">
+                                Iniciante
+                            </span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="skills-note">
+                    <span aria-hidden="true">💡</span>
+                    Os níveis representam minha autoavaliação atual e podem
+                    mudar conforme eu pratico e desenvolvo novas habilidades.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Seção de projetos -->
+        <section
+            class="projects section"
+            id="projetos"
+            aria-labelledby="projectsTitle"
+        >
+
+            <div class="container">
+
+                <div class="section-heading projects-heading">
+
+                    <p class="section-kicker">
+                        TESTANDO, ERRANDO E APRENDENDO
+                    </p>
+
+                    <h2 id="projectsTitle">
+                        Algumas coisas que
+                        <span class="highlight-text">já criei.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Aqui você pode conhecer meus exercícios, minhas ideias
+                        e as coisas que estou desenvolvendo.
+                    </p>
+
+                </div>
+
+                <!-- Filtros preenchidos pelo JavaScript -->
+                <div
+                    class="project-filters"
+                    id="projectFilters"
+                    aria-label="Filtrar projetos por tecnologia"
+                >
+                    <button
+                        class="filter-button active"
+                        type="button"
+                        data-filter="todos"
+                        aria-pressed="true"
+                    >
+                        Todos
+                    </button>
+                </div>
+
+                <!--
+                    Os cards de projetos serão criados pelo JavaScript.
+                    Cada projeto será inserido dentro deste contêiner.
+                -->
+                <div
+                    class="projects-grid"
+                    id="projectsGrid"
+                    aria-live="polite"
+                    aria-busy="true"
+                >
+                </div>
+
+                <p class="projects-note">
+                    <span aria-hidden="true">🌷</span>
+                    Um portfólio é um trabalho em andamento, assim como eu.
+                </p>
+
+                <div class="projects-cta">
+
+                    <p>
+                        Tem uma ideia legal ou quer trocar experiências?
+                    </p>
+
+                    <a class="button button-primary" href="#contato">
+                        Vamos conversar
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Seção de contato -->
+        <section
+            class="contact section"
+            id="contato"
+            aria-labelledby="contactTitle"
+        >
+
+            <div class="container contact-container">
+
+                <div class="contact-content">
+
+                    <p class="section-kicker">
+                        ESPAÇO ABERTO PARA CONVERSAS
+                    </p>
+
+                    <h2 id="contactTitle">
+                        Bora tirar uma
+                        <span class="highlight-text">ideia do papel?</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Estou aberta a conhecer pessoas, trocar ideias sobre
+                        tecnologia e descobrir novas oportunidades de
+                        aprendizado. Se quiser conversar, pode me escrever!
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <span class="contact-detail-icon" aria-hidden="true">
+                                ✉
+                            </span>
+
+                            <div>
+                                <h3>Uma mensagem</h3>
+                                <p>
+                                    Preencha o formulário e deixe sua mensagem.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-detail">
+
+                            <span class="contact-detail-icon" aria-hidden="true">
+                                📍
+                            </span>
+
+                            <div>
+                                <h3>Natal, RN</h3>
+                                <p>
+                                    Conectando ideias daqui para outros lugares.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a
+                            class="social-link"
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visitar o GitHub"
+                        >
+                            <span aria-hidden="true">⌘</span>
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a
+                            class="social-link"
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visitar o LinkedIn"
+                        >
+                            <span aria-hidden="true">in</span>
+                            LinkedIn
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Formulário de contato -->
+                <div class="contact-form-card">
+
+                    <div class="form-heading">
+
+                        <span class="form-decoration" aria-hidden="true">
+                            ✳
+                        </span>
+
+                        <h3>Me conta sua ideia!</h3>
+
+                        <p>
+                            Os campos marcados com
+                            <span aria-hidden="true">*</span>
+                            são obrigatórios.
+                        </p>
+
+                    </div>
+
+                    <form id="contactForm" novalidate>
+
+                        <div class="form-group">
+
+                            <label for="nome">
+                                Seu nome
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Como você se chama?"
+                                autocomplete="name"
+                                required
+                                minlength="2"
+                                aria-describedby="nomeErro"
+                            >
+
+                            <p
+                                class="field-error"
+                                id="nomeErro"
+                                aria-live="polite"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Seu e-mail
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="voce@exemplo.com"
+                                autocomplete="email"
+                                inputmode="email"
+                                required
+                                aria-describedby="emailErro"
+                            >
+
+                            <p
+                                class="field-error"
+                                id="emailErro"
+                                aria-live="polite"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="mensagem">
+                                Sua mensagem
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="5"
+                                placeholder="Escreva sua ideia, dúvida ou mensagem..."
+                                minlength="20"
+                                required
+                                aria-describedby="mensagemErro mensagemContador"
+                            ></textarea>
+
+                            <div class="textarea-footer">
+
+                                <p
+                                    class="field-error"
+                                    id="mensagemErro"
+                                    aria-live="polite"
+                                ></p>
+
+                                <span
+                                    class="character-counter"
+                                    id="mensagemContador"
+                                >
+                                    0 caracteres
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Consentimento para tratamento dos dados -->
+                        <div class="consent-group">
+
+                            <input
+                                type="checkbox"
+                                id="consentimento"
+                                name="consentimento"
+                                required
+                                aria-describedby="consentimentoDescricao consentimentoErro"
+                            >
+
+                            <div class="consent-content">
+
+                                <label for="consentimento">
+                                    Concordo com o uso dos meus dados para
+                                    responder a esta mensagem.
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <p id="consentimentoDescricao">
+                                    Os dados informados destinam-se exclusivamente
+                                    ao contato solicitado. Este formulário não envia nem armazena dados
+                                    em um servidor.
+                                </p>
+
+                                <p
+                                    class="field-error"
+                                    id="consentimentoErro"
+                                    aria-live="polite"
+                                ></p>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="button button-primary submit-button"
+                            type="submit"
+                        >
+                            Enviar mensagem
+                            <span aria-hidden="true">↗</span>
+                        </button>
+
+                        <!-- Mensagens de retorno acessíveis -->
+                        <div
+                            class="form-feedback"
+                            id="formFeedback"
+                            role="status"
+                            aria-live="polite"
+                            tabindex="-1"
+                        ></div>
+
+                        <p class="form-privacy-note">
+                            <span aria-hidden="true">🔒</span>
+                            Sua privacidade importa. Não compartilhe senhas
+                            ou informações sensíveis.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    class="logo footer-logo"
+                    href="#inicio"
+                    aria-label="Jennifer Oliveira, voltar ao início"
+                >
+                    <span class="logo-mark" aria-hidden="true">J.</span>
+                    <span class="logo-name">jennifer<span>.</span></span>
+                </a>
+
+                <p>
+                    Aprendendo, criando e construindo meu próprio caminho.
+                </p>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="anoAtual"></span>
+                    Jennifer Oliveira do Nascimento.
+                    Feito com carinho e um pouquinho de código.
+                </p>
+
+                <a class="footer-top-link" href="#topo">
+                    Voltar ao topo
+                    <span aria-hidden="true">↑</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Botão flutuante que aparece ao rolar a página -->
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Voltar ao topo da página"
+        title="Voltar ao topo"
+        hidden
+    >
+        <span aria-hidden="true">↑</span>
+    </button>
+
+</body>
+</html>
